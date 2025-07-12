@@ -4,50 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEE</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.png"/>
+    <title>Corporacion Corporativa Ecuador</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
 <body>
-
-    <header>
-        <h1>Corporacion Educativa Ecuador</h1>
-        <p>¡Nuestra meta es la Exelencia</p>
+    <!--Encabezado con el logo y un menu de navegacion-->
+    <header class="header">
+        <div class="container header-content">
+            <!--logo Institucional-->
+            <img src="img/logo.png" alt="logo CEE" class="logo">
+            <!--Menu de Navegacion-->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#capacitaciones">Capacitaciones</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Contactos</a></li>
-            <li><a href="">Informacion</a></li>
-            <li><a href="">Iniciar Sesion</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article>
-            <h2>Area de Informatica</h2>
-            <p>Los estudiantes de informatica se especialisan en la creacion de documentos, limpiesa de  
-                computadoras, crear paginas web y las redes informaticas</p>
-        </article>
-        <section>
-            <h3>Capacitaciones Tecnico Profecionales de la Corporacion Unidad Educativa Ecuador</h3>
-            <ul>
-                <li><a href="">Belleza Integral</a></li>
-                <li><a href="">Enfermeria</a></li>
-                <li><a href="">Informatica</a></li>
-                <li><a href="">Parvularia</a></li>
-                <li><a href="">Urgencia y Emergencias Medica</a></li>
-                <li><a href="">Contabilidad y Administracion</a></li>
-            </ul>
-        </section>
-    </main>
-    <aside>
-        <h4>Sobre nosotros</h4>
-        <p>Somos uns corporacion enfocada en el desarrollo
-             de profecionals en las diversas areas de las dependencias actuales </p>
-    </aside>
-    <footer>
-        <p>Copyright 2025 | CEE Todos los Derechos Reservados | Desarrollado By Jordy Peñafiel</p>
+    <!--Seccion principal de bienvenida-->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Formando Profesionales del Futuro</h1>
+            <p>La Corporacion Educativa Ecuador ofrece formacion
+                tecnica de calidad para transformar vidas. </p>
+        </div>
+    </section>
+    <!--Seccion de capacitaciones-->
+    <section class="capacitaciones" id="capacitaciones">
+        <div class="grid">
+            <div class="card">Belleza Integral</div>
+            <div class="card">Informatica</div>
+            <div class="card">Contabilidad y Administracion</div>
+            <div class="card">Urgencias y Emergencias Medicas</div>
+            <div class="card">Enfermeria</div>
+            <div class="card">Parvularia</div>
+        </div>
+    </section>
+    <!--Seccion sobre nosotros-->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <h2>¿Quienes somos?</h2>
+            <p>Somos una Corporacion Educativa dedicada a la formacion tecnica
+                y profecional en diversas areas del conocimiento.
+                Nuestra mision es brindar oportunidades de desarrollo a
+                jovenes y adultos mediante capacitaciones de alta calidad
+                academico.
+            </p>
+        </div>
+    </section>
+    <!--Seccion de contacto-->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2>Contactanos</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <p>Copyright 2025 Corporacion Educativa Ecuador.
+            Todos los derechos reservados.
+            Desarrollado by Jordy Peñafiel
+        </p>
     </footer>
 </body>
 

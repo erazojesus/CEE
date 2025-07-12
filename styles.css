@@ -1,71 +1,168 @@
-/* Gneral */
-body{
-    font-family: Arial, Helvetica, sans-serif;
+/* Reset general */
+* {
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: black;
+    box-sizing: border-box;
 }
-/* Cabecera */
-header{
-    background-color: #0979b0;
-color: white;
-padding: 20px;
-text-align: center;
+
+/* Estilo base del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
-/* Navegacion */
-nav{
-    background-color: #006699;
-    padding: 10px;
-    text-align: center;
+
+/* Contenedor general */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-nav li{
-    display: inline;
-    margin: 15px;
-}
-nav a{
+
+/* ENCABEZADO Y MENU */
+.header {
+    background-color: #003366;
     color: white;
-    text-align: none;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Menu de navegacion */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
-nav a:hover {
+
+.nav-list a:hover {
     text-decoration: underline;
 }
-/* Contenido principal */
-main {
+
+/* SECCION HERO */
+.hero {
+    background-color: #005599;
+    color: white;
+    padding: 60xp 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* SECCION CAPACITACIONES */
+.capacitaciones {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.capacitaciones h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #e1ecf4;
     padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
 }
-/* Articulo */
-article {
-    background-color: #e28940;
-    border: 1px solid #411f00;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-/* Seccion relacionada */
-section {
-    background-color: #fa7b05;
-    padding: 15px;
-    border-radius: 5px;
-}
-/* Aside */
-aside {
+
+/*SECCION NOSOTROS */
+.nosotros {
     background-color: #f0f0f0;
-    padding: 15px;
-    margin: 20px;
-    border-left: 5px solid #ccc;
+    padding: 40px 0;
+    text-align: center;
 }
-/* Pie de pagina */
-footer {
-    background-color: #333;
+
+.nosotros h2 {
+    margin-bottom: 20px;
+}
+
+/*SECCION CONTACTO */
+.contacto {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #005599;
+}
+
+/* PIE DE PAGINA */
+.footer {
+    background-color: #003366;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
